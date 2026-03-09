@@ -1,0 +1,69 @@
+{
+  "@@locale": "en",
+  "appName": "Expand",
+  "@appName": {
+    "description": "The name of the application"
+  },
+  "exploreTab": "Explore",
+  "statisticsTab": "Statistics",
+  "settingsTab": "Settings",
+  
+  "locating": "Locating...",
+  "awaitingGps": "Awaiting GPS lock...",
+  "exploringCity": "Exploring: {city}",
+  "@exploringCity": {
+    "placeholders": {
+      "city": { "type": "String", "example": "Vienna" }
+    }
+  },
+  "inspectingCity": "Inspecting: {city}",
+  "@inspectingCity": {
+    "placeholders": {
+      "city": { "type": "String", "example": "Vienna" }
+    }
+  },
+
+  "statisticsTitle": "Statistics",
+  "globalLevel": "Global Explorer Level {level}",
+  "@globalLevel": {
+    "placeholders": {
+      "level": { "type": "int", "example": "1" }
+    }
+  },
+  "totalDistance": "Total Distance",
+  "areaExplored": "Area Explored",
+  "discoveredPoints": "Discovered Points",
+  "citiesExplored": "Cities Explored",
+  "citiesHeader": "Cities",
+  
+  "settingsTitle": "Settings",
+  "generalSection": "General",
+  "gpsSection": "Location",
+  "highAccuracy": "High Accuracy GPS",
+  "highAccuracySub": "Best results, uses more battery",
+  "aboutSection": "About",
+  "version": "Version",
+  "mapData": "Map Data",
+  "mapDataVal": "© OpenStreetMap contributors",
+  "geocodingTitle": "Geocoding",
+  "geocodingVal": "Nominatim / OpenStreetMap",
+  "manifestoTitle": "Expand",
+  "manifestoBody": "Turn every walk into an adventure. Discover the world one step at a time.",
+  "resetProgress": "Reset Progress",
+  "resetProgressConfirm": "Are you sure you want to reset all your exploration progress? This cannot be undone.",
+  "reset": "Reset",
+  "cancel": "Cancel",
+  
+  "welcomeTitle": "Welcome to Expand",
+  "welcomeBody": "Discover the world around you.\nThe fog clears as you move.",
+  "getStarted": "Get Started",
+  "locationPermissionTitle": "Location Permission",
+  "locationPermissionBody": "Expand needs persistent location access to clear the fog of war as you walk, run, or cycle.",
+  "locationRequiredTitle": "Location Required",
+  "locationRequiredBody": "Expand uses your location in the background to automatically clear the fog of war as you move.",
+  "grantPermission": "Grant Permission",
+  "grantAccess": "Grant Access",
+  "permissionDenied": "Location permission denied",
+  "openSettings": "Open Settings",
+  "tryAgain": "Try Again"
+}
