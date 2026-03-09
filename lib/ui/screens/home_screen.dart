@@ -456,9 +456,8 @@ class HomeScreenState extends State<HomeScreen>
       final pts = GeoMath.circleToPolygon(c, GeoMath.discoveryRadius);
       return Polygon(
         points: pts,
-        color: AppColors.styrianForest.withAlpha(25),
-        borderColor: AppColors.styrianForest.withAlpha(60),
-        borderStrokeWidth: 1.0,
+        color: AppColors.styrianForest.withAlpha(15),
+        isFilled: true,
       );
     }).toList();
   }

@@ -106,10 +106,10 @@ class ExplorationEngine extends ChangeNotifier {
     // 3. Land check before adding to discovered
     final land = await _landCheck.isLand(ll);
     if (land) {
-      // Distance Filter: Only add if >= 25m from nearest discovered point
+      // Distance Filter: Only add if >= 40m from nearest discovered point
       bool tooClose = false;
       for (final p in _discoveredPoints) {
-        if (GeoMath.haversine(ll, p.latLng) < 25.0) {
+        if (GeoMath.haversine(ll, p.latLng) < 40.0) {
           tooClose = true;
           break;
         }
@@ -197,7 +197,7 @@ class ExplorationEngine extends ChangeNotifier {
     for (final p in _discoveredPoints) {
       bool tooClose = false;
       for (final f in filtered) {
-        if (GeoMath.haversine(p.latLng, f.latLng) < 25.0) {
+        if (GeoMath.haversine(p.latLng, f.latLng) < 40.0) {
           tooClose = true;
           break;
         }
