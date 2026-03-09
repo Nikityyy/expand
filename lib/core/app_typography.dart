@@ -37,7 +37,7 @@ abstract final class AppTypography {
   static TextStyle get bodyMedium => GoogleFonts.outfit(
         fontSize: 16,
         fontWeight: FontWeight.w400,
-        color: AppColors.surfaceDark.withOpacity(0.8),
+        color: AppColors.surfaceDark.withValues(alpha: 0.8),
       );
 
   static TextStyle get labelLarge => GoogleFonts.outfit(
@@ -70,7 +70,7 @@ abstract final class AppTypography {
   static TextStyle get bodySmall => GoogleFonts.outfit(
         fontSize: 14,
         fontWeight: FontWeight.w400,
-        color: AppColors.surfaceDark.withOpacity(0.7),
+        color: AppColors.surfaceDark.withValues(alpha: 0.7),
       );
 
   static TextStyle get buttonLarge => GoogleFonts.outfit(

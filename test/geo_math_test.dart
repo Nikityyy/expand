@@ -27,7 +27,7 @@ void main() {
       ];
 
       final area = GeoMath.accumulatedCircleAreaM2(centers, radius: 10.0);
-      final singleArea = 3.14159 * 100;
+      const singleArea = 3.14159 * 100;
       expect(area, closeTo(singleArea * 2, 10.0));
     });
 
@@ -38,7 +38,7 @@ void main() {
       ];
 
       final area = GeoMath.accumulatedCircleAreaM2(centers, radius: 50.0);
-      final singleArea = 3.14159 * 50 * 50;
+      const singleArea = 3.14159 * 50 * 50;
       // Heuristic should reject the second point as too close
       expect(area, closeTo(singleArea, 10.0));
     });

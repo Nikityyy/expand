@@ -10,14 +10,14 @@ import '../../core/app_colors.dart';
 class AppShell extends StatefulWidget {
   const AppShell({super.key});
 
-  static _AppShellState? of(BuildContext context) =>
-      context.findAncestorStateOfType<_AppShellState>();
+  static AppShellState? of(BuildContext context) =>
+      context.findAncestorStateOfType<AppShellState>();
 
   @override
-  State<AppShell> createState() => _AppShellState();
+  State<AppShell> createState() => AppShellState();
 }
 
-class _AppShellState extends State<AppShell> {
+class AppShellState extends State<AppShell> {
   int _currentIndex = 0;
 
   void switchToMap() {

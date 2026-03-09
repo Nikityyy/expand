@@ -88,7 +88,7 @@ abstract final class GeoMath {
   static double calculateNewAreaM2(
       LatLng newPoint, List<LatLng> existingPoints) {
     const radius = discoveryRadius;
-    final areaCircle = math.pi * radius * radius;
+    const areaCircle = math.pi * radius * radius;
 
     // If no existing points, full area
     if (existingPoints.isEmpty) return areaCircle;
@@ -109,7 +109,7 @@ abstract final class GeoMath {
     // Geometric overlap approximation (circular segment area)
     // Area = 2 * R^2 * acos(d/2R) - (d/2) * sqrt(R^2 - (d/2)^2)
     final d = minDict;
-    final r = radius;
+    const r = radius;
     final overlap = 2 * r * r * math.acos(d / (2 * r)) -
         (d / 2) * math.sqrt(r * r - (d * d / 4));
 

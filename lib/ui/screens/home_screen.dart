@@ -15,13 +15,13 @@ import '../widgets/exp_progress_bar.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
-  static final GlobalKey<_HomeScreenState> globalKey = GlobalKey();
+  static final GlobalKey<HomeScreenState> globalKey = GlobalKey();
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<HomeScreen> createState() => HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen>
+class HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
   final MapController _mapController = MapController();
   late AnimationController _pulseCtrl;

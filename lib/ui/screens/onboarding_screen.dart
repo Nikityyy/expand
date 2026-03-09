@@ -43,6 +43,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     }
 
     if (_step == 1) {
+      if (!mounted) return;
       // Just in case it bypasses the direct handler.
       await context.read<StorageService>().setOnboardingCompleted();
       if (mounted) {

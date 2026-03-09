@@ -58,9 +58,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
           // ── Manifesto card ─────────────────────────────────────────────────
           Container(
             padding: const EdgeInsets.all(20),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: AppColors.styrianForest,
-              borderRadius: const BorderRadius.all(Radius.circular(16)),
+              borderRadius: BorderRadius.all(Radius.circular(16)),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -122,9 +122,9 @@ class _SettingsTile extends StatelessWidget {
         leading: Container(
           width: 36,
           height: 36,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: AppColors.pebble,
-            borderRadius: const BorderRadius.all(Radius.circular(10)),
+            borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
           child: Icon(icon, size: 18, color: AppColors.styrianForest),
         ),

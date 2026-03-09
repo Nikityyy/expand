@@ -31,18 +31,18 @@ abstract final class AppTheme {
         },
       ),
       // ── App Bar ────────────────────────────────────────────────────────────
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         backgroundColor: AppColors.limestone,
         surfaceTintColor: Colors.transparent,
         elevation: 0,
         scrolledUnderElevation: 0,
         centerTitle: true,
-        systemOverlayStyle: const SystemUiOverlayStyle(
+        systemOverlayStyle: SystemUiOverlayStyle(
           statusBarColor: Colors.transparent,
           statusBarIconBrightness: Brightness.dark,
         ),
         titleTextStyle: AppTextStyles.titleLarge,
-        iconTheme: const IconThemeData(color: AppColors.slate),
+        iconTheme: IconThemeData(color: AppColors.slate),
       ),
       // ── Cards ──────────────────────────────────────────────────────────────
       cardTheme: const CardThemeData(
